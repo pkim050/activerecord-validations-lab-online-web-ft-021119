@@ -1,6 +1,6 @@
 class MyValidator < ActiveModel::Validator
   def validate(post)
-    #binding.pry
+    binding.pry
     return false if post.title == nil
     if post.title.include? "Won't Believe" || "Secret" || "Top [number]" || "Guess"
       puts "It came out true"
