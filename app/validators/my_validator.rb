@@ -5,5 +5,6 @@ class MyValidator < ActiveModel::Validator
     unless post.title.include? "Won't Believe" || "Secret" || "Top [number]" || "Guess"
       return false
     end
+    return true
   end
 end
